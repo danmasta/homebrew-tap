@@ -4,6 +4,8 @@ class Envstr < Formula
     homepage "https://github.com/danmasta/envstr"
     version "0.0.1"
 
+    @@file = ""
+
     if OS.linux? && Hardware::CPU.intel?
         url "https://github.com/danmasta/envstr/releases/download/v0.0.1/envstr-linux-x64"
         sha256 "83b512b6f74bc4c375b9a5ca7998c8de66013b549c1e5776baccacf589883b88"
