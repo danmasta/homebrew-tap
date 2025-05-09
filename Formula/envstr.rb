@@ -2,24 +2,24 @@ class Envstr < Formula
 
     desc "Envstr"
     homepage "https://github.com/danmasta/envstr"
-    version "0.0.1"
+    version "1.0.0"
     @@file = "envstr"
 
     if OS.linux? && Hardware::CPU.intel?
         url "https://github.com/danmasta/envstr/releases/download/v#{version}/envstr-linux-x64"
-        sha256 "bd41e5f9b2301ac2913f6f322bd3b32f42e8e70eccc7258a8707d37b1c09c774"
+        sha256 "2acbe5284afce716e7f69cbe85c080c9faea4ed9559d9063112a5e52814d3572"
         @@file = "envstr-linux-x64"
     end
 
     if OS.linux? && Hardware::CPU.arm?
         url "https://github.com/danmasta/envstr/releases/download/v#{version}/envstr-linux-arm64"
-        sha256 "f51aa7e26f7cc85c5fe3770054692b328fef9f6fc0e857efd8705927aa78a9bd"
+        sha256 "a919721099f5c34a0acf7bb5923c97d92ae9d18a39d2c51e9d8dba984b8e6648"
         @@file = "envstr-linux-arm64"
     end
 
     if OS.mac?
         url "https://github.com/danmasta/envstr/releases/download/v#{version}/envstr-darwin"
-        sha256 "5e6ce08fc49c97cf91b92b57befe8ef898964331bb5984c0924a16a252fe4a7b"
+        sha256 "258ff93dd0db2ab7704f2976fac5d8a05dbb73a92ffc8d0e566ba1a88e2c9471"
         @@file = "envstr-darwin"
     end
 
